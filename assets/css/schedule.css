@@ -1,0 +1,190 @@
+/* main */
+main #year_list {
+    margin-top: 30px;
+    margin-left: 48px;
+    margin-bottom: 100px;
+    display: flex;
+    font-size: 1.4rem;
+}
+
+main #year_list li {
+    margin-right: 30px;
+}
+
+main #year_list a {
+    display: block;
+}
+
+main #year_list #year2019 a {
+    color: #00a0e9;
+    text-decoration: underline;
+}
+
+main #year_list a:hover {
+    color: #00a0e9;
+    text-decoration: underline;
+}
+
+main .game_box {
+    margin-left: 48px;
+    margin-right: 48px;
+    margin-bottom: 100px;
+}
+
+main .game_box:last-child {
+    margin-bottom: 0;
+}
+
+main .game_box dl {
+    display: flex;
+    margin-bottom: 35px;
+}
+
+main .game_box dt {
+    color: #fff;
+    background-color: #c62d27;
+    font-size: 1.4rem;
+    line-height: 2.5;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 18px;
+}
+
+main .game_box dd {
+    font-size: 1.8rem;
+    margin-right: 10px;
+}
+
+main .game_box dd:nth-child(3) {
+    margin-right: 50px;
+}
+
+main .game_box .sub_game_box {
+    background-color: #333;
+    padding: 20px 25px 35px 25px;
+    box-sizing: border-box;
+}
+
+main .game_box .score_box {
+    width: 100%;
+    margin-bottom: 35px;
+    border-collapse: collapse;
+    border: none;
+}
+
+main .game_box .score_box thead th,
+main .game_box .score_box thead td {
+    color: #ededed;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 2;
+    border: none;
+}
+
+main .game_box .score_box tbody {
+    background-color: #ededed;
+}
+
+main .game_box .score_box tbody th,
+main .game_box .score_box tbody td {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.2;
+    border: solid 2px #333;
+}
+
+main .game_box .score_box th {
+    width: 25%;
+}
+
+main .game_box .score_box td {
+    width: 8.5%
+}
+
+main .game_box .score_box .total {
+    width: 15.5%;
+}
+
+main .game_box .battery_box {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+main .game_box .battery_box th,
+main .game_box .battery_box td {
+    color: #ededed;
+    font-size: 1.4rem;
+    line-height: 2.2;
+    border: solid 1px #ededed;
+}
+
+main .game_box .battery_box th {
+    width: 15%;
+}
+
+main .game_box .battery_box .first_strike,
+main .game_box .battery_box .long_hit {
+    padding-left: 10px;
+}
+
+main .game_box .battery_box .first_strike {
+    border-right: hidden;
+    width: 6.5%;
+}
+
+main .game_box .battery_box .late_attack {
+    border-right: hidden;
+    border-left: hidden;
+    width: 6.5%;
+}
+
+main .game_box .sub_game_box p {
+    color: #ededed;
+    font-size: 1.4rem;
+    line-height: 2;
+    margin-top: 35px;
+}
+
+@media screen and (min-width: 561px) and (max-width: 960px) {}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    main #year_list {
+        flex-wrap: wrap;
+    }
+
+    main .game_box {
+        margin-left: 24px;
+        margin-right: 24px;
+        margin-bottom: 100px;
+    }
+
+    main .game_box dl {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    main .game_box dt {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    main .game_box dd {
+        font-size: 1.8rem;
+        margin-right: 0px;
+        margin-bottom: 10px;
+        padding-left: 32px;
+    }
+
+    main .game_box dd:nth-child(3) {
+        margin-right: 0px;
+    }
+
+    main .game_box .score_box tbody th {
+        font-size: 1rem;
+        font-weight: normal;
+        text-align: center;
+        line-height: 2.2;
+    }
+
+}

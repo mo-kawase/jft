@@ -1,0 +1,789 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>試合情報 | 社会人硬式野球部 JAPAN FLASH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/top/favicon.ICO">
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/schedule.css" rel="stylesheet" type="text/css">
+    <script src="../assets/js/jquery-2.1.4.min.js"></script>
+    <script src="../assets/js/top.js"></script>
+</head>
+
+<body>
+    <!--  /common  -->
+    <header>
+        <div class="inner clearfix">
+            <h1><a href="../index.html"><img src="../assets/img/top/header_logo.png" alt="header_logo"></a></h1>
+            <ul class="header_link clearfix">
+                <li><a href="http://www.nfnf.co.jp" target="_blank"><img src="../assets/img/top/heder_nf_logo.png" alt="heder_nf_logo"></a></li>
+                <li><a href="https://ts-league.com/team/japanflash/" target="_blank"><img src="../assets/img/top/header_skyts_logo.png" alt="header_skyts_log"></a></li>
+            </ul>
+            <button id="responsive_nav"><img src="../assets/img/top/header_nav_btn.png" alt="header_nav_btn"></button>
+        </div>
+        <nav>
+            <ul class="inner">
+                <li><a href="../about/index.html">ABOUT</a></li>
+                <li><a href="../team/index.html">TEAM</a></li>
+                <li><a href="../schedule/index.html">SCHEDULE</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+                <li><a href="../gallery/index.html">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  /common  -->
+
+    <main>
+        <div id="wrapper_white" class="inner">
+            <h2><img src="../assets/img/schedule/title_schedule.png"></h2>
+            <article id="new_game">
+                <h3 class="sub_title">最新の試合</h3>
+                <section class="game_box" id="g_20190928">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年10月19日(土)</dd>
+                        <dd>18:30 試合開始</dd>
+                        <dt>場　所</dt>
+                        <dd>芝公園野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>COBAINS</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total"></td>
+                                </tr>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td></td>
+                                <td class="late_attack">後攻：</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit"></td>
+                            </tr>
+                        </table>
+                        <!--<p></p>-->
+                    </div>
+                </section>
+
+                <section class="game_box" id="g_20190928">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年9月28日(土)</dd>
+                        <dd>18:30 - 20:30</dd>
+                        <dt>場　所</dt>
+                        <dd>月島運動場C面野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td></td>
+                                    <td class="total">8</td>
+                                </tr>
+                                <tr>
+                                    <th>Punctual</th>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td class="total">5</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>織原、吉⽥（３勝6敗）-吉⽥、岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit"></td>
+                            </tr>
+                        </table>
+                        <p>リーグ戦９試合⽬の先発は織原、久しぶりの先発で球が上擦り3点本塁打を浴びてしまう。2回よりエース吉⽥が2点に抑えてチームが逆転し今季３勝⽬。 打線は相変わらず低調だが、４回の主砲織原の同点打と相⼿投⼿陣の乱調に漬け込み６回⼀気に逆転。終盤の逆転劇で接戦をものにした。。リーグ戦成績 4勝5敗。</p>
+                    </div>
+                </section>
+
+                <section class="game_box" id="g_20190922">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年9月22日(日)</dd>
+                        <dd>14:00 - 16:00</dd>
+                        <dt>場　所</dt>
+                        <dd>亀戸野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">5</td>
+                                </tr>
+                                <tr>
+                                    <th>Cadenza</th>
+                                    <td>1</td>
+                                    <td>3</td>
+                                    <td>2</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉⽥（２勝6敗）-岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">吉⽥ 左⼆塁打（３回）</td>
+                            </tr>
+                        </table>
+                        <p>２連勝中の先発吉⽥だったが、序盤から球が⾛らずCadenza打線に捕まった。野球素⼈の堂根に打球が集まったのも不運であった。。。<br>今季６敗⽬。 打線は4回に吉⽥の⻑打と相⼿失策が絡み４点をとり⼀時同点に追いついたが終盤にも失点し逃げ切られた。<br>リーグ戦成績 ３勝5敗。</p>
+                    </div>
+                </section>
+
+            </article>
+            <article id="past_game">
+                <h3 class="sub_title">過去の試合結果</h3>
+                <ul id="year_list">
+                    <li id="year2016"><a href="#">2016年度</a></li>
+                    <li id="year2017"><a href="#">2017年度</a></li>
+                    <li id="year2018"><a href="#">2018年度</a></li>
+                    <li id="year2019"><a href="#">2019年度</a></li>
+                    <li id="year2020"><a href="#">2020年度</a></li>
+                </ul>
+                <section class="game_box" id="g_20190831">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年8月31日(土)</dd>
+                        <dd>19:00 - 21:00</dd>
+                        <dt>場　所</dt>
+                        <dd>砧公園野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>一番星</th>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">2</td>
+                                </tr>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（２勝5敗）- 岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">織原　中本塁打（３回）</td>
+                            </tr>
+                        </table>
+                        <p>リーグ戦7試合目の先発吉田は圧巻の投球で5回を投げ１５奪三振の2失点完投勝利。今季２勝目！！<br>打線は３回主砲織原の左中間をやぶる勝ち越し三塁打で勝ち越し接戦をものにした。。リーグ戦成績　３勝4敗。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190727">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年7月27日(土)</dd>
+                        <dd>17:00 - 19:00</dd>
+                        <dt>場　所</dt>
+                        <dd>浦安中央公園野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>ピュアスターズ</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td class="total">1</td>
+                                </tr>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>2</td>
+                                    <td></td>
+                                    <td class="total">3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（１勝5敗）-織原、岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit"></td>
+                            </tr>
+                        </table>
+                        <p>リーグ戦6試合目の先発吉田は粘りの投球で6回を投げ１失点完投勝利。今季初勝利！！<br>打線は６回平松の中安からチャンスをつかみ押し出し四球で勝ち越し接戦をものにした。。リーグ戦成績　2勝4敗。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190720">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年7月20日(土)</dd>
+                        <dd>14:00 - 16:00</dd>
+                        <dt>場　所</dt>
+                        <dd>夢の島総合運動場野球場9面野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">4</td>
+                                </tr>
+                                <tr>
+                                    <th>東京アーネストシャルズ</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>3</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">6</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（0勝5敗）-岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">吉田・左本塁打（３回）/吉田・中二塁打（5回）</td>
+                            </tr>
+                        </table>
+                        <p>今季5試合目の先発吉田は5回を投げ失策がらみで6失点。今季5敗目！！<br>打線は３番吉田の連続本塁打のみの４得点のみ4対6で惜敗。リーグ戦成績　１勝4敗。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190706">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年7月6日(土)</dd>
+                        <dd>17:00 - 19:00</dd>
+                        <dt>場　所</dt>
+                        <dd>南ふ頭公園野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>野cube</th>
+                                    <td>3</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">4</td>
+                                </tr>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（0勝4敗）-岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">織原・左二塁打（１回）/堺・左二塁打（３回）　</td>
+                            </tr>
+                        </table>
+                        <p>今季4試合目の先発吉田は130㌔に迫る真っ直ぐで10奪三振も守備の乱れで４失点。今季4敗目！！<br>打線は天候と同じで湿りがちで堺は先制適時打を含む2安打の活躍も散発３安打で投手の踏ん張りに答えられず沈んだ。<br>１対４で惜敗リーグ戦成績　１勝3敗。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190622">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年6月22日(土)</dd>
+                        <dd>17:00 - 19:00</dd>
+                        <dt>場　所</dt>
+                        <dd>大井埠頭中央海浜公園野 Ｃ面</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td class="total">9</td>
+                                </tr>
+                                <tr>
+                                    <th>草野球スピリッツ</th>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>3</td>
+                                    <td>X</td>
+                                    <td></td>
+                                    <td class="total">12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（0勝3敗）、織原、吉田-織原、吉田、織原</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">織原・左本塁打（１回）/吉田・左二塁打（３回）/岡・左本塁打（6回）　</td>
+                            </tr>
+                        </table>
+                        <p>今季３試合目の先発吉田は３回を投げ９失点。今季３敗目！！　　打線は１・２番が６出塁、<br>クリーンアップの長打で６得点と効率よく攻めたが惜しくも３点届かず惜敗。リーグ戦成績　１勝２敗。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190525">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年5月25日(土)</dd>
+                        <dd>17:00 - 19:00</dd>
+                        <dt>場　所</dt>
+                        <dd>東綾瀬公園球場 C面</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>BGジャパン</th>
+                                    <td>2</td>
+                                    <td>1</td>
+                                    <td>6</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td class="total">9</td>
+                                </tr>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>4</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td class="total">11</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>織原（１勝0敗）-吉田</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">吉田・中三塁打（２回）,中二塁打（５回）/織原・中二塁打（４回）,左二塁打（５回）<br>堺・中二塁打（3回）,右二塁打（5回）　</td>
+                            </tr>
+                        </table>
+                        <p>今季初先発の織原は6回を粘り強く投げ完投。打線は好調で１３安打の猛攻。５回に中軸の長打攻勢で同点に追いつき、<br>和田の犠牲飛で逆転した。スカイツリーグ二戦目にして今季初勝利　リーグ戦成績　１勝１敗。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190511">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年5月11日(土)</dd>
+                        <dd>17:00 - 19:00</dd>
+                        <dt>場　所</dt>
+                        <dd>小豆沢公園野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Rangers</th>
+                                    <td>1</td>
+                                    <td>6</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">8</td>
+                                </tr>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>7</td>
+                                    <td>0</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="total">7</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（0勝２敗）-織原、岡</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit"></td>
+                            </tr>
+                        </table>
+                        <p>先発吉田は5回を投げ序盤にエラー絡みで8失点。　打線は4回に打者一巡の猛攻で一点差まで詰め寄る７得点。<br>最終回は一打同点の場面で和田が見逃し三振に倒れ試合終了。サテライトカップ一回戦敗退。</p>
+                    </div>
+                </section>
+                <section class="game_box" id="g_20190420">
+                    <dl>
+                        <dt>日　時</dt>
+                        <dd>2019年4月20日(土)</dd>
+                        <dd>14:00 - 16:00</dd>
+                        <dt>場　所</dt>
+                        <dd>夢の島10面野球場</dd>
+                    </dl>
+                    <div class="sub_game_box">
+                        <table class="score_box">
+                            <thead>
+                                <tr>
+                                    <th>チーム名</th>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td class="total">計</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>JAPAN FLASH</th>
+                                    <td>0</td>
+                                    <td>4</td>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td class="total">9</td>
+                                </tr>
+                                <tr>
+                                    <th>千種倶楽部</th>
+                                    <td>5</td>
+                                    <td>0</td>
+                                    <td>0</td>
+                                    <td>5</td>
+                                    <td>2</td>
+                                    <td>0</td>
+                                    <td>X</td>
+                                    <td class="total">12</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <table class="battery_box">
+                            <tr>
+                                <th>バッテリー</th>
+                                <td class="first_strike">先攻：</td>
+                                <td>吉田（0勝1敗）-岡、織原</td>
+                                <td class="late_attack">
+                                    <!--後攻：-->
+                                </td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th>長　打</th>
+                                <td colspan="4" class="long_hit">織原・左本塁打（２回・６回）/秦・左本塁打（２回）/山本・右本塁打（3回）/岡・中二塁打（2回）　</td>
+                            </tr>
+                        </table>
+                        <p>先発吉田は６回を投げ味方エラーも有り12失点。　打線は４番織原の２本の本塁打を含む４本塁打で中盤逆転するが、<br>直後に逆転され７回無死満塁のチャンスも時間切れとなり試合終了。　リーグ戦（0勝1敗）</p>
+                    </div>
+                </section>
+            </article>
+        </div>
+    </main>
+
+    <!--  /common  -->
+    <footer>
+        <p class="inner">Copyright &copy; Japan Flash All rights reserved.</p>
+    </footer>
+    <!--  /common  -->
+</body></html>

@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>チーム情報 | 社会人硬式野球部 JAPAN FLASH</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../assets/img/top/favicon.ICO">
+    <link href="../assets/css/common.css" rel="stylesheet" type="text/css">
+    <link href="../assets/css/team.css" rel="stylesheet" type="text/css">
+    <link href="../assets/js/Modaal/modaal.min.css" rel="stylesheet" type="text/css">
+    <link href="../assets/js/fancybox/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+    <script src="../assets/js/jquery-2.1.4.min.js"></script>
+    <script src="../assets/js/team.js"></script>
+    <script src="../assets/js/fancybox/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/top.js"></script>
+    <!--<script src="../assets/js/Modaal/modaal.min.js"></script>-->
+    <!--ここからfancybox用css-->
+    <style>
+        #personal_data {
+            display: none;
+        }
+
+        .personal_box {
+            background-color: #fff;
+            width: 680px;
+        }
+
+        .player_photo {
+            margin-right: 60px;
+            float: left;
+        }
+
+        .player_photo h4 {
+            font-size: 7.2rem;
+            color: #333;
+            line-height: 1;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .player_photo h4 span {
+            font-size: 1.4rem;
+            font-weight: normal;
+            vertical-align: top;
+            display: inline-block;
+            margin-left: 5px;
+            line-height: 2;
+        }
+
+        .player_data h5 {
+            color: #c62d27;
+            font-size: 1.8rem;
+            line-height: 2;
+            border-bottom: solid 5px #c62d27;
+            padding-left: 10px;
+            margin-bottom: 25px;
+        }
+
+        .player_data dl {
+            font-size: 1.4rem;
+            line-height: 3.4;
+            padding-left: 10px;
+        }
+
+        .player_data dt {
+            font-weight: bold;
+            float: left;
+            width: 120px;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 560px) {
+            .personal_box {
+                width: 98%;
+            }
+
+            .player_photo {
+                margin-right: 0;
+                margin-bottom: 35px;
+                float: none;
+            }
+
+            .player_data dt {
+                float: none;
+            }
+            
+            .player_data .space {
+                display: none;
+            }
+    </style>
+    <!--ここまでfancybox用css-->
+</head>
+
+<body>
+    <!--  /common  -->
+    <header>
+        <div class="inner clearfix">
+            <h1><a href="../index.html"><img src="../assets/img/top/header_logo.png" alt="header_logo"></a></h1>
+            <ul class="header_link clearfix">
+                <li><a href="http://www.nfnf.co.jp" target="_blank"><img src="../assets/img/top/heder_nf_logo.png" alt="heder_nf_logo"></a></li>
+                <li><a href="https://ts-league.com/team/japanflash/" target="_blank"><img src="../assets/img/top/header_skyts_logo.png" alt="header_skyts_log"></a></li>
+            </ul>
+        </div>
+        <button id="responsive_nav"><img src="../assets/img/top/header_nav_btn.png" alt="header_nav_btn"></button>
+        <nav>
+            <ul class="inner">
+                <li><a href="../about/index.html">ABOUT</a></li>
+                <li><a href="../team/index.html">TEAM</a></li>
+                <li><a href="../schedule/index.html">SCHEDULE</a></li>
+                <li><a href="../contact/index.html">CONTACT</a></li>
+                <li><a href="../gallery/index.html">GALLERY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--  /common  -->
+
+    <main>
+        <div id="wrapper_black" class="inner">
+            <h2><img src="../assets/img/team/title_team.png" alt="title_team"></h2>
+            <article id="player_list">
+                <h3 class="sub_title">選手名鑑</h3>
+                <ul>
+                    <li id="team_7sakai" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_7sakai" data-fancybox><img src="../assets/img/team/team_7sakai.jpg" alt="team_7sakai"></a></p>
+                            <h4>7<span>Sakai</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_16oka" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_16oka" data-fancybox><img src="../assets/img/team/team_16oka.jpg" alt="team_16oka"></a></p>
+                            <h4>16<span>Oka</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_1yamamoto" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_1yamamoto" data-fancybox><img src="../assets/img/team/team_1yamamoto.jpg" alt="team_1yamamoto"></a></p>
+                            <h4>1<span>Yamamoto</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_30hiramatsu" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_30hiramatsu" data-fancybox><img src="../assets/img/team/team_30hiramatsu.jpg" alt="team_1yamamoto"></a></p>
+                            <h4>30<span>Hiramatsu</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_11wada" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_11wada" data-fancybox><img src="../assets/img/team/team_11wada.jpg" alt="team_11wada"></a></p>
+                            <h4>11<span>Wada</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_42hata" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_42hata" data-fancybox><img src="../assets/img/team/team_42hata.jpg" alt="team_42hata"></a></p>
+                            <h4>42<span>Hata</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_8yoshida" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_8yoshida" data-fancybox><img src="../assets/img/team/team_8yoshida.jpg" alt="team_8yoshida"></a></p>
+                            <h4>8<span>Yoshida</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_21done" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_21done" data-fancybox><img src="../assets/img/team/team_21done.jpg" alt="team_21done"></a></p>
+                            <h4>21<span>done</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_64orihara" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_64orihara" data-fancybox><img src="../assets/img/team/team_64orihara.jpg" alt="team_64orihara"></a></p>
+                            <h4>64<span>Orihara</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_3ito" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_3ito" data-fancybox><img src="../assets/img/team/team_3ito.jpg" alt="comingsoon"></a></p>
+                            <h4>3<span>Ito</span></h4>
+                        </div>
+                    </li>
+                    <li id="team_27haramaki" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_27haramaki" data-fancybox><img src="../assets/img/team/team_27haramaki.jpg" alt="team_27haramaki"></a></p>
+                            <h4>27<span>Haramaki</span></h4>
+                        </div>
+                    </li>                    
+                    <li id="team_9nishikawa" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_9nishikawa" data-fancybox><img src="../assets/img/team/team_9nishikawa.jpg" alt="team_27haramaki"></a></p>
+                            <h4>9<span>Nishikawa</span></h4>
+                        </div>
+                    </li>
+                    
+                    
+                    <!-- nakajima
+                    <li id="team_0nakajima" class="random">
+                        <div class="player">
+                            <p class="img_dropshadow"><a href="#personal_0nakajima" data-fancybox><img src="../assets/img/team/team_comingsoon.jpg" alt="comingsoon"></a></p>
+                            <h4>0<span>Nakajima</span></h4>
+                        </div>
+                    </li> -->
+                </ul>
+            </article>
+        </div>
+    </main>
+
+    <!--ここから選手個人情報リンク-->
+    <aside id="personal_data">
+        <section id="personal_7sakai" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_7sakai.jpg" alt="team_7sakai"></p>
+                <h4>7<span>Sakai</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1973.9.2</dd>
+                    <dt>身長／体重</dt>
+                    <dd>170cm／70kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>阿南高専</dd>
+                    <dt>ひとこと</dt>
+                    <dd>何事も全力で頑張ります。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_16oka" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_16oka.jpg" alt="team_16oka"></p>
+                <h4>16<span>Oka</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1992.10.16</dd>
+                    <dt>身長／体重</dt>
+                    <dd>172cm／59kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>徳島北高－甲南大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>パワーでチームに貢献します。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_1yamamoto" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_1yamamoto.jpg" alt="team_1yamamoto"></p>
+                <h4>1<span>Yamamoto</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1977.8.2</dd>
+                    <dt>身長／体重</dt>
+                    <dd>168cm／70kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／左打</dd>
+                    <dt>出身校</dt>
+                    <dd>尽誠学園高－山梨学院大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>日本一を目指します。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_30hiramatsu" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_30hiramatsu.jpg" alt="team_30hiramatsu"></p>
+                <h4>30<span>Hiramatsu</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1983.9.30</dd>
+                    <dt>身長／体重</dt>
+                    <dd>173cm／98kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>阿南高専</dd>
+                    <dt>ひとこと</dt>
+                    <dd>フルスイングで貢献します。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_11wada" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_11wada.jpg" alt="team_11wada"></p>
+                <h4>11<span>Wada</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1993.2.14</dd>
+                    <dt>身長／体重</dt>
+                    <dd>170cm／68kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>徳島市立高－四国大学</dd>
+                    <dt>ひとこと</dt>
+                    <dd>チームに勢いを与えられるような</dd>
+                    <dt class="space">&nbsp;</dt>
+                    <dd>プレーをします。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_42hata" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_42hata.jpg" alt="team_42hata"></p>
+                <h4>42<span>Hata</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1993.8.10</dd>
+                    <dt>身長／体重</dt>
+                    <dd>175cm／68kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／左打</dd>
+                    <dt>出身校</dt>
+                    <dd>徳島市立高－大阪産業大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>ディーフェンス！！</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_8yoshida" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_8yoshida.jpg" alt="team_8yoshida"></p>
+                <h4>8<span>Yoshida</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1995.7.25</dd>
+                    <dt>身長／体重</dt>
+                    <dd>175cm／72kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>龍谷大学付属平安高－奈良学園大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>チームの勝利のために全力で投げます。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_21done" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_21done.jpg" alt="team_21done"></p>
+                <h4>21<span>Done</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1976.1.21</dd>
+                    <dt>身長／体重</dt>
+                    <dd>173cm／65kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>城ノ内高－長崎総合科学大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>走、攻、守すべてをみてください。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_64orihara" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_64orihara.jpg" alt="team_64orihara"></p>
+                <h4>64<span>Orihara</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1994.9.29</dd>
+                    <dt>身長／体重</dt>
+                    <dd>170cm／67kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>城南高－摂南大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>応援してくれるファンの方々に</dd>
+                    <dt class="space">&nbsp;</dt>
+                    <dd>感動を与えるプレーをします。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_27haramaki" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_27haramaki.jpg" alt="team_27haramaki"></p>
+                <h4>27<span>Haramaki</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1997.6.25</dd>
+                    <dt>身長／体重</dt>
+                    <dd>177cm／64kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／左打</dd>
+                    <dt>出身校</dt>
+                    <dd>八千代東高</dd>
+                    <dt>ひとこと</dt>
+                    <dd>若い力でチームに貢献します。</dd>
+                </dl>
+            </div>
+        </section>        
+        <section id="personal_3ito" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_3ito.jpg" alt="team_3ito"></p>
+                <h4>3<span>Ito</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1977.4.9</dd>
+                    <dt>身長／体重</dt>
+                    <dd>172cm／75kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>目黒高</dd>
+                    <dt>ひとこと</dt>
+                    <dd>スカイツリーグ優勝</dd>
+                    <dt class="space">&nbsp;</dt>
+                    <dd>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;チームに貢献します。</dd>
+                </dl>
+            </div>
+        </section>
+        <section id="personal_9nishikawa" class="personal_box clearfix">
+            <div class="player_photo">
+                <p class="img_dropshadow"><img src="../assets/img/team/team_9nishikawa.jpg" alt="team_9nishikawa"></p>
+                <h4>9<span>Nishikawa</span></h4>
+            </div>
+            <div class="player_data">
+                <h5>PERSONAL DATA</h5>
+                <dl class="clearfix">
+                    <dt>生年月日</dt>
+                    <dd>1982.11.12</dd>
+                    <dt>身長／体重</dt>
+                    <dd>172cm／80kg</dd>
+                    <dt>投／打</dt>
+                    <dd>右投／右打</dd>
+                    <dt>出身校</dt>
+                    <dd>高松北高-日本大</dd>
+                    <dt>ひとこと</dt>
+                    <dd>声でチームをひっぱります。</dd>
+                </dl>
+            </div>
+        </section>
+    </aside>
+    <!--ここまで選手個人情報リンク-->
+
+    <!--  /common  -->
+    <footer>
+        <p class="inner">Copyright &copy; Japan Flash All rights reserved.</p>
+    </footer>
+    <!--  /common  -->
+</body></html>

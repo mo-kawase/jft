@@ -1,0 +1,447 @@
+/* slick 
+.slick-prev,
+.slick-next{
+    display: none;
+}
+*/
+/* main */
+main #key_slide {
+    /*overflow: hidden;*/
+    width: 1024px;
+    margin: auto;
+    padding-bottom: 35px;
+    z-index: 1;
+    position: relative;
+}
+
+.prev-arrow {
+    position: absolute;
+    z-index: 99;
+    top: 50%;
+    left: 1%;
+    opacity: 0.5;
+}
+
+.next-arrow {
+    position: absolute;
+    z-index: 98;
+    bottom: 50%;
+    right: 1%;
+    opacity: 0.5;
+}
+
+/*main #key_slide ul{
+    display: flex;
+    width: 3072px;
+}*/
+main #key_slide li {
+    width: 1024px;
+}
+
+main #topics1 {
+    background-image: url(../img/top/topics1_back.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main #topics1 .trans_white_box {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 50px 75px 50px 65px;
+    box-sizing: border-box;
+    /*opacity: 0;
+    transform: translate(0, 45px);
+    transition: all 300ms;*/
+}
+
+/*main #topics1 .trans_white_box .effect-scroll {
+    opacity: 1;
+    transform: translate(0, 0);
+}*/
+
+main #topics1 .left {
+    float: left;
+}
+
+main #topics1 .left h2 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+main #topics1 .left p {
+    font-size: 1.8rem;
+    margin-bottom: 28px;
+}
+
+main #topics1 .left button a {
+    display: block;
+    background-color: #fff;
+    transition: all 0.5s ease;
+}
+
+main #topics1 .left button a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+main #topics1 .white_box {
+    background-color: #fff;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5));
+    display: flex;
+    width: 550px;
+    height: 200px;
+    padding-top: 35px;
+    padding-bottom: 18px;
+    box-sizing: border-box;
+    float: right;
+}
+
+main #topics1 .white_box .team {
+    width: 43%;
+    margin: auto;
+}
+
+main #topics1 .white_box .team_logo {
+    line-height: 105px;
+    text-align: center;
+}
+
+main #topics1 .white_box .team_name {
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+main #topics1 .white_box strong {
+    font-size: 4.8rem;
+    font-weight: bold;
+    line-height: 147px;
+    text-align: center;
+}
+
+main #topics2 {
+    background: linear-gradient(to bottom, #e4e4e4, #fbfbfb);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main #topics2 .toppage_title,
+main #team_link .toppage_title {
+    height: 50px;
+    background: linear-gradient(to right, #c62d27, #78211e);
+}
+
+main #topics2 h3,
+main #team_link h3 {
+    font-size: 24px;
+    color: #fff;
+    float: left;
+    line-height: 50px;
+    padding-left: 25px;
+}
+
+main #topics2 .toppage_title p a,
+main #team_link .toppage_title p a {
+    display: block;
+    float: right;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 50px;
+    padding-right: 20px;
+    transition: all 0.5s ease;
+}
+
+main #topics2 .toppage_title p a:hover,
+main #team_link .toppage_title p a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+main #topics2 .toppage_title p a span,
+main #team_link .toppage_title p a span {
+    font-size: 1.8rem;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+main #topics2 dl {
+    background-color: #fff;
+    font-size: 1.4rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(../img/top/topics2_back.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto 100%;
+}
+
+main #topics2 dt {
+    float: left;
+    color: #c62d27;
+    font-weight: bold;
+    line-height: 3.5;
+    margin-left: 100px;
+}
+
+main #topics2 dd {
+    line-height: 3.5;
+    margin-left: 240px;
+}
+
+main #topics2 dd a {
+    text-decoration: underline;
+}
+
+main #topics2 dd a:hover {
+    color: #c62d27;
+}
+
+main #team_link {
+    background-color: #333;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+main #team_link ul {
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    overflow-x: hidden;
+}
+
+main #team_link li {
+    margin-right: 52px;
+}
+
+main #team_link li:last-child {
+    margin-right: 0px;
+}
+
+main #team_link li img {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+    width: 100%;
+}
+
+main #team_link h4 {
+    font-size: 7.2rem;
+    color: #fff;
+    line-height: 1;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+main #team_link h4 span {
+    font-size: 1.4rem;
+    font-weight: normal;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 2;
+}
+
+main #mg_banner {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+main #mg_banner a {
+    display: block;
+    background-color: #fff;
+    transition: all 0.3s ease;
+}
+
+main #mg_banner a img {
+    width: 100%;
+}
+
+main #mg_banner a:hover {
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#all_topics {
+    display: none;
+}
+
+@media screen and (min-width: 561px) and (max-width: 960px) {
+    main #key_slide {
+        width: 100%;
+    }
+
+    main #key_slide li {
+        width: 100%;
+    }
+
+    main #key_slide li img {
+        width: 100%;
+    }
+
+    main #topics1 .trans_white_box {
+        padding: 50px 30px 50px 30px;
+    }
+
+    main #topics1 .left {
+        float: none;
+        margin-bottom: 35px;
+    }
+
+    /*main #player_list ul {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 100%;
+    }
+
+    main #player_list li {
+        width: auto;
+        flex: auto;
+        margin-right: 8%;
+    }
+
+    main #player_list li:nth-child(3n) {
+        margin-right: 8%;
+    }*/
+    main #topics1 .white_box {
+        float: none;
+        width: 100%;
+    }
+
+    main #team_link li {
+        flex: auto;
+        width: auto;
+        margin-right: 2%;
+    }
+
+    main #team_link li:nth-child(4) {
+        margin-right: 0;
+    }
+
+    main #team_link li:first-child {
+        display: none;
+    }
+
+    main #team_link li:last-child {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    main #key_slide {
+        width: 100%;
+    }
+
+    main #key_slide li {
+        width: 100%;
+    }
+
+    main #key_slide li img {
+        width: 100%;
+    }
+
+    main #topics1 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    main #topics1 .trans_white_box {
+        padding: 20px;
+    }
+
+    main #topics1 .left {
+        float: none;
+    }
+
+    main #topics1 .left button a {
+        margin-bottom: 35px;
+    }
+
+    main #topics1 .white_box {
+        float: none;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex: auto;
+        padding: 18px;
+    }
+
+    main #topics1 .white_box .team {
+        width: 100%;
+    }
+
+    main #topics1 .white_box .team_logo {
+        line-height: 1.5
+    }
+
+    main #topics1 .white_box .team_logo img {
+        width: 45%
+    }
+
+    main #topics1 .white_box strong {
+        font-size: 3.6rem;
+        line-height: 3;
+        display: block;
+        text-align: center;
+    }
+
+    main #topics2 {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    main #topics2 dl {
+        background-image: none;
+    }
+
+    main #topics2 dt {
+        float: none;
+        margin-left: 20px;
+        line-height: 1.5;
+    }
+
+    main #topics2 dd {
+        margin-left: 40px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+    }
+
+    main #team_link {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    main #team_link ul {
+        display: block;
+    }
+
+    main #team_link li {
+        width: 60%;
+        margin: auto;
+        margin-bottom: 35px;
+        text-align: center;
+    }
+
+    main #team_link li img {
+        width: 100%;
+    }
+
+    main #team_link li:first-child {
+        display: none;
+    }
+
+    main #team_link li:last-child {
+        display: none;
+    }
+
+    main #team_link h4 {
+        text-align: left;
+    }
+
+    main #mg_banner a img {
+        width: 100%;
+    }
+}

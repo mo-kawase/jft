@@ -1,0 +1,176 @@
+/* main */
+main #player_list ul {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main #player_list li {
+    margin-right: 52px;
+    margin-bottom: 100px;
+}
+
+main #player_list li:nth-child(3n) {
+    margin-right: 0;
+}
+
+main #player_list li a {
+    display: block;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+main #player_list a img {
+    width: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+main #player_list a img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+
+main #player_list .img_dropshadow {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+main #player_list h4 {
+    font-size: 7.2rem;
+    color: #fff;
+    line-height: 1;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+main #player_list h4 span {
+    font-size: 1.4rem;
+    font-weight: normal;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 2;
+}
+
+/*fancybox用css→head内に移動
+
+#personal_data {
+    display: none;
+}
+
+#personal_data .personal_box {
+    background-color: #fff;
+    padding: 50px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 5px #333;
+    display: inline-block;
+}
+
+#personal_data .player_photo {
+    margin-right: 60px;
+    float: left;
+}
+
+#personal_data .personal_box.img_dropshadow {
+    filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.5));
+}
+
+#personal_data .player_photo h4 {
+    font-size: 7.2rem;
+    color: #333;
+    line-height: 1;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#personal_data .player_photo h4 span {
+    font-size: 1.4rem;
+    font-weight: normal;
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+    line-height: 2;
+}
+
+#personal_data .player_data {
+    float: right;
+}
+
+#personal_data .player_data h5 {
+    color: #c62d27;
+    font-size: 1.8rem;
+    line-height: 2;
+    border-bottom: solid 5px #c62d27;
+    padding-left: 10px;
+    margin-bottom: 25px;
+}
+
+#personal_data .player_data dl {
+    font-size: 1.4rem;
+    line-height: 3.4;
+    padding-left: 10px;
+}
+
+#personal_data .player_data dt {
+    font-weight: bold;
+    float: left;
+}
+
+#personal_data .player_data dd {
+    padding-left: 110px;
+}
+*/
+@media screen and (min-width: 561px) and (max-width: 960px) {
+    main #player_list ul {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 100%;
+    }
+
+    main #player_list li {
+        width: auto;
+        flex: auto;
+        margin-right: 8%;
+    }
+
+    main #player_list li:nth-child(3n) {
+        margin-right: 8%;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    main #player_list ul {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main #player_list li {
+        margin: auto;
+        width: 70%;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    main #player_list li:nth-child(3n) {
+        margin-right: auto;
+    }
+
+    main #player_list li img {
+        width: 100%;
+    }
+
+    main #player_list h4 {
+        text-align: left;
+    }
+}

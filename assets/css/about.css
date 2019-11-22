@@ -1,0 +1,65 @@
+/* main */
+main p {
+    font-size: 1.4rem;
+    line-height: 2.5;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+main #whats_this .team_photo {
+    text-align: center;
+    margin-top: 20px;
+}
+
+main #whats_this .team_photo img {
+    width: 90%;
+}
+
+main #whats_this .current_time {
+    text-align: right;
+    margin-right: 15%;
+}
+
+main #captain {
+    background-image: url(../img/about/captain_image.png);
+    background-repeat: no-repeat;
+    background-position: 92% 100%;
+    background-size: auto 530px;
+}
+
+main #captain .captain_message {
+    width: 80%;
+    margin-right: 0;
+}
+
+main #captain .captain_name {
+    margin-top: 80px;
+    margin-left: 410px;
+}
+
+main #captain .captain_name img {
+    display: block;
+    margin-left: 25px;
+}
+
+@media screen and (min-width: 561px) and (max-width: 960px) {}
+
+@media screen and (min-width: 320px) and (max-width: 560px) {
+    main #captain .captain_name {
+        margin-left: 35px;
+    }
+
+    main p {
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    main #captain{
+        background-size: auto 300px;
+        padding-bottom: 300px;
+        background-position: 50% 100%;
+    }
+    main #captain .captain_message {
+    width: 100%;
+    margin-right: 30px;
+    }
+}
