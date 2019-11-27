@@ -333,6 +333,7 @@ main #mg_banner a:hover {
 @media screen and (min-width: 320px) and (max-width: 560px) {
     main #key_slide {
         width: 100%;
+        padding: 0;
     }
 
     main #key_slide li {
